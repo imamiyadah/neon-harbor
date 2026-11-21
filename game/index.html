@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon Harbor — an open-world crime story</title>
+<meta name="description" content="Neon Harbor: an original top-down open-world crime game. Explore a sun-soaked harbour city on foot and by car, run five story jobs, dodge the precinct, and sell hot wheels at the Driftline Garage.">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #171320; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: crosshair; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Neon Harbor: explore the city on foot with W A S D, press E to enter and steal cars, aim with the mouse and click to punch or shoot, complete missions and escape the police"></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
